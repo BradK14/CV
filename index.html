@@ -85,7 +85,43 @@
           </tbody>
         </table>
       </section>
-
     </main>
+
+    <!-- Contact Info Input Form -->
+    <footer>
+       <section>
+        <h2>Send Contact Info Here</h2>
+        <form action="#">
+          <!-- Get their name -->
+          <label for="name">Name:</label>
+          <input type="text"
+            name="name"
+            id="name"
+            placeholder="First and last name"
+            required
+          >
+
+          <!-- Get their email -->
+          <label for="email">Email:</label>
+          <input type="email"
+            name="email"
+            id="email"
+            placeholder="email@email.com"
+            required
+          >
+
+          <!-- Optionally get a message from them -->
+          <label for="message">Message:</label>
+          <textarea name="message"
+            id="message"
+            placeholder="Short message for me"
+          ></textarea>
+
+          <!-- Submit and Clear buttons -->
+           <button type="submit">Submit</button>
+           <button type="reset">Reset</button>
+        </form>
+       </section>
+    </footer>
   </body>
 </html>

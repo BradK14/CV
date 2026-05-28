@@ -16,15 +16,32 @@ body{
     border: 20px solid rgb(0, 131, 0);
 }
 
-/* Space between header and the rest of the page */
 header{
+    /* Space between header and the rest of the page */
     padding-bottom: 5em;
+
+    /* Flex container */
+    display: flex;
+    justify-content: space-between;
+    height: 15em;
+}
+
+/* Header links positioned bottom right */
+header p{
+    align-self: flex-end;
 }
 
 /* Profile image */
 img{
-    border-radius: 50%;
     outline: 2px solid rgb(0, 131, 0);
+
+    /* Aligns the profile image to the upper left and makes it round */
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    object-position: 100% 80%; 
+    align-self: flex-start;
 }
 
 /* Section separators */
@@ -39,6 +56,9 @@ h1{
     text-align: center;
     font-size: 3.0rem;
     text-shadow: 2px 2px 2px rgb(37, 0, 0);
+
+    /* Position the name centered */
+    align-self: center;
 }
 
 /* Section titles */
@@ -62,4 +82,18 @@ a{
 /* Replace form input borders */
 form input, form textarea{
     outline: 2px solid rgb(0, 131, 0);
+}
+
+/* Flex container to make the form content centered */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+/* Center footer title */
+footer h2{
+    text-align: center;
 }

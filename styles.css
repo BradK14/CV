@@ -1,9 +1,36 @@
+/* Border Box */
+*{
+    box-sizing: border-box;
+}
+
 /* Default overall settings */
 body{
     font-family: Finlandica Headline;
     background-color: rgb(225, 255, 212);
     color: rgb(105, 0, 0);
     font-size: 1.0rem;
+
+    /* Box model elements for entire page */
+    margin: 2em;
+    padding: 2em;
+    border: 20px solid rgb(0, 131, 0);
+}
+
+/* Space between header and the rest of the page */
+header{
+    padding-bottom: 5em;
+}
+
+/* Profile image */
+img{
+    border-radius: 50%;
+    outline: 2px solid rgb(0, 131, 0);
+}
+
+/* Section separators */
+section{
+    margin: 2em;
+    border-top: 10px solid rgb(0, 131, 0);
 }
 
 /* Name at the top of the CV */
@@ -30,4 +57,9 @@ h3{
 a{
     text-decoration: none;
     color: rgb(0, 0, 170);
+}
+
+/* Replace form input borders */
+form input, form textarea{
+    outline: 2px solid rgb(0, 131, 0);
 }
